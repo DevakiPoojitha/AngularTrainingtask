@@ -1,0 +1,50 @@
+<h1>Angular Router Sample</h1>
+<!-- <ul>
+    <li *ngFor = "let user of userData.data">
+    {{user.id}}  ,  {{user.email}} ,{{user.first_name}} , {{user.last_name}} , <img class="img-fluid img-responsive rounded product-image" src={{user.avatar}}>
+    </li>
+</ul> -->
+
+
+<table class="table" border="1" >
+
+    <thead style="color: hwb(306 0% 0%);">
+  
+      <tr>
+  
+        <th scope="col"> ID </th>
+  
+        <th scope="col" >Email ID </th>
+  
+        <th scope="col">First Name </th>
+  
+        <th scope="col"> Last Name </th>
+  
+        <th scope="col"> Avatar </th>
+  
+      </tr>
+  
+    </thead>
+  
+    <tbody>
+  
+      <tr style="color: rgb(128, 0, 73);" *ngFor="let user of userData.data">
+  
+        <td>{{user.id}}</td>
+        <td>{{user.email}}</td>
+  
+        <td style="color: rgb(0, 179, 255);">{{user.first_name}}</td>
+  
+        <td>{{user.last_name}}</td>
+  
+        <td><img class="img-fluid img-responsive rounded product-image" src={{user.avatar}}> </td>
+  
+      </tr>
+  
+  
+  
+    </tbody>
+  
+  </table>
+<router-outlet></router-outlet>
+
